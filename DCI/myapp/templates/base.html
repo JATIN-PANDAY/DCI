@@ -1,0 +1,338 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="{% static 'img/dci3.jpg' %}" />
+    <title>DCI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+
+    <!-- Favicon -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstarp links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    <!-- Bootstarp links -->
+
+   
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+
+        <div class="row align-items-center py-4 px-xl-5">
+
+            <div class="col-lg-3">
+                <h1 class="animate-character m-0" id="animated-letter" style="font-size: 50px;">DCI</h1>
+
+                <!-- <a href="" class="text-decoration-none"> -->
+                <!-- <img class="position-relative w-300" src="img/dci3.jpg" style="height:80px; width:210px; object-fit: cover;"> -->
+                <!-- <h1 class="animate-character m-0"><span class="text-primary" id="animated-letter">D</span>CI</h1> -->
+                <!-- <span class="text-primary" id="animated-letter">DCI</span> -->
+
+                <!-- </a>  -->
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
+                        <small>Near Govt , Girls Inter College Shanti Nagar Etah , UP - 207001</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
+                        <small>dcicourses@gmail.com</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-phone text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
+                        <small>9897477725 <br>8477823277</small>
+                        <!-- <small>+91 8477823277</small> -->
+     
+                        <i class="fas fa-arrow-to-top"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="d-flex mt-3">
+                    <a href="https://www.facebook.com/No1DCI?mibextid=2JQ9oc" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/dcietah?s=21" class="nav-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/digital-computer-institute-2938402a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/dci_courses?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="nav-link"><i class="fab fa-instagram"></i></a>
+                </div>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light"
+                    id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
+
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="animate-character m-0" id="animated-letter" style="font-size: 50px;">DCI</h1>
+
+
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+                        <div class="navbar-nav py-0">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <a href="/#about-us" class="nav-item nav-link">About</a>
+                            <a href="/#courses" class="nav-item nav-link">Courses</a>
+                            <a href="/gallery_photos" class="nav-item nav-link">Gallery</a>
+                            <a href="#" class="nav-item nav-link">Franchise</a>
+                            <a href="#" class="nav-item nav-link">Centers</a>
+                            <a href="#" class="nav-item nav-link">Blog</a>
+                            <!-- <a href="#" class="nav-item nav-link">Placement </a> -->
+
+
+                            
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link  dropdown-toggle" data-toggle="dropdown">Student Zone</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="/new_registration" class="dropdown-item">New Regestration</a>
+
+                                    <a href="/registration_no" class="dropdown-item">Download Certificate</a>
+                                </div>
+                            </div>
+                            <a href="/#contact-form" class="nav-item nav-link">Contact</a>
+                            <a href="#" class="nav-item nav-link">Bank A/C</a>
+
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <body>
+
+{%block body%}
+
+
+{%endblock body%}
+
+</body>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Near Govt , Girls Inter College Shanti Nagar Etah ,
+                            UP - 207001</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>9897477725 , 8477823277</p>
+                        
+                        <!-- <p><i class="fa fa-phone-alt mr-2"></i>+91 8477823277</p> -->
+                       
+                        <p><i class="fa fa-envelope mr-2"></i>dcicourses@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-square mr-2" href="https://x.com/dcietah?s=21"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/No1DCI?mibextid=2JQ9oc"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="https://www.linkedin.com/in/digital-computer-institute-2938402a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-square" href="https://www.instagram.com/dci_courses?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">SITELINKS</h5>
+                
+
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="/#about-us"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="/#contact-form"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                            <a class="text-white" href="/#courses"><i class="fa fa-angle-right mr-2"></i>Courses</a>
+                            <a class="text-white" href=""><i class="fa fa-angle-right mr-2"></i>Bank A/C</a>
+                            <a class="text-white" href="/#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                            <a class="text-white" href="/#"><i class="fa fa-angle-right mr-2"></i>Franchise</a>
+                        
+                        </div>
+                    </div>
+                    <!-- {%if course%}
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">COURSES</h5>
+                
+                        {% for i in course%}
+                        <div class="d-flex flex-column justify-content-start">
+
+                            <a class="text-white mb-2" href="{% url 'course_detail' uid=i.uid  %}"><i class="fa fa-angle-right mr-2"></i>{{i.course_name}}</a>
+                            <!-- <a class="text-white mb-2" href="/#about-us"><i class="fa fa-angle-right mr-2"></i>ADOP</a>
+                            <a class="text-white mb-2" href="/#contact-form"><i class="fa fa-angle-right mr-2"></i>O level</a>
+                            <a class="text-white" href="/#courses"><i class="fa fa-angle-right mr-2"></i>DCA</a>
+                            <a class="text-white" href=""><i class="fa fa-angle-right mr-2"></i>DTP</a> -->
+                            <!-- <a class="text-white" href="/#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                            <a class="text-white" href="/#"><i class="fa fa-angle-right mr-2"></i>Franchise</a> -->
+                        
+                        </div>
+                        {%endfor%}
+                    
+                    </div>
+                    {%endif%} -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer End -->
+    <!-- <i class="fas fa-arrow-to-top"></i> -->
+
+    <!-- Javascript animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var aboutUsSection = document.querySelector('.about-us-section');
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        aboutUsSection.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(aboutUsSection);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var courseCards = document.querySelectorAll('.course-card');
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            courseCards.forEach(function (card) {
+                observer.observe(card);
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var testimonialCarousel = document.querySelector('.testimonial-carousel');
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(testimonialCarousel);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var videoSection = document.querySelector('.animated-section');
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(videoSection);
+        });
+        $(document).ready(function () {
+            $(".testimonial-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                navText: ['<button class="owl-prev">Prev</button>', '<button class="owl-next">Next</button>']
+            });
+        });
+        // testmorials
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the total number of testimonials
+            var totalItems = document.querySelectorAll('.testimonial-carousel .carousel-item').length;
+
+            // Remove existing indicators
+            var indicators = document.querySelector('.carousel-indicators');
+            indicators.innerHTML = '';
+
+            // Dynamically generate the carousel indicators
+            for (var i = 0; i < totalItems; i++) {
+                var indicator = document.createElement('li');
+                indicator.setAttribute('data-target', '#carouselExampleIndicators');
+                indicator.setAttribute('data-slide-to', i);
+                if (i === 0) {
+                    indicator.classList.add('active');
+                }
+                indicators.appendChild(indicator);
+            }
+
+            // Update the carousel controls
+            var prevControl = document.querySelector('.carousel-control-prev');
+            var nextControl = document.querySelector('.carousel-control-next');
+
+            prevControl.setAttribute('data-slide-to', totalItems - 1);
+            nextControl.setAttribute('data-slide-to', 1);
+        });
+
+        // testmonials 2
+
+        
+    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WydeP094WWqHjMHKpQ/6S5me9upZlTbGJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js'%}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js'%}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js'%}"></script>
+    <script src="{% static 'mail/contact.js'%}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js'}"></script>
+</body>
+
+</html>
+

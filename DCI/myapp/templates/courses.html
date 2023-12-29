@@ -1,0 +1,60 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+{%block body%}
+
+
+<!-- ***** Main Banner Area Start ***** -->
+<section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="{% static 'img/section-video.mp4'%}" type="video/mp4" />
+
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+            <h2><em>Cou</em>rses <span id="typed-output"></span></h2>
+                    
+    </div>
+</section>
+<!-- ***** Main Banner Area End ***** -->
+
+    
+    <!-- Carousel End -->
+
+    
+    <!-- Courses Start -->
+    <div class="container-fluid py-5" id="courses">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
+                <!-- <h1>Our Trending Courses</h1> -->
+            </div>
+        
+            <div class="row">
+                {%for i in courses%}
+                <div class="col-lg-4 col-md-6 mb-4 course-card">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="/media/{{i.course_image}}" alt="">
+                        <div class="bg-secondary p-4">
+                            <!-- <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div> -->
+                            <a class="h5" href="{% url 'course_detail' uid=i.uid  %}">{{i.course_name}}</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <a class="h5" href="#">Buy now</a>
+                                    <h5 class="m-0">Rs.{{i.course_fee}}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+
+   {%endblock body%}
