@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block body%}
+
+
+
+<!-- ***** Main Banner Area Start ***** -->
+{%if courses%}
+<section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="{% static 'img/section-video.mp4'%}" type="video/mp4" />
+
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+            <h2><em>{{courses.course_name|slice:'4'}}</em>{{courses.course_name|slice:'4:'}} <span id="typed-output"></span></h2>
+            
+                    
+    </div>
+</section>
+<!-- ***** Main Banner Area End ***** -->
+
+   
+
+    
+    <!-- Course_detail Start -->
+    
+    <section class="section course-detail mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="/media/{{courses.course_image}}" alt="{{ courses.title }}" class="img-fluid">
+                    <h3 class="test-muted mt-4">Duration: <small>{{courses.course_duration}}</small></h3>
+                    <h3 class="test-muted mt-4">Fees: <small>Rs.{{courses.course_fee}}</small></h3>
+
+                </div>
+                <div class="col-lg-6">
+                    <!-- <h2>{{ courses.course_name }}</h2> -->
+                    <h3 class="test-muted mt-4">Details: </h3><h6><small>{{courses.course_detail}}</small></h6>
+
+                    <!-- <p>{{ courses.course_detail }}</p> -->
+                    <!-- Add more details as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Course_detail end -->
+{%endif%}
+
+{%endblock body%}

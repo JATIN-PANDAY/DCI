@@ -1,0 +1,117 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+{%block body%}
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="{% url 'new_registration' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                
+            {% if messages %}
+            <div class="mt-3">
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="father_name">Father's Name:</label>
+                    <input type="text" class="form-control" id="father_name" name="father_name" placeholder="Enter father's name"  required>
+                </div>
+                <div class="form-group">
+                    <label for="mother_name">Mother's Name:</label>
+                    <input type="text" class="form-control" id="mother_name" name="mother_name" placeholder="Enter mother's name"  required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea class="form-control" id="address" name="address" placeholder="Enter address"  required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pin">PIN:</label>
+                    <input type="text" class="form-control" id="pin" name="pin" placeholder="Enter PIN"  required>
+                </div>
+                <div class="form-group">
+                    <label for="sex">Sex:</label>
+                    <select class="form-control" id="sex" name="sex"  required>
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="religion_category">Religion/Category:</label>
+                    <input type="text" class="form-control" id="religion_category" name="religion_category" placeholder="Enter religion/category"  required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" class="form-control" id="dob" name="dob"  required>
+                </div>
+                <div class="form-group">
+                    <label for="qualification">Qualification:</label>
+                    <input type="text" class="form-control" id="qualification" name="qualification" placeholder="Enter qualification"  required>
+                </div>
+                <div class="form-group">
+                    <label for="marksheet_last_year">Marksheet for Last Year:</label>
+                    <input type="file" class="form-control-file" id="marksheet_last_year" name="marksheet_last_year" accept=".pdf"  required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile_number">Mobile Number:</label>
+                    <input type="tel" class="form-control" id="mobile_number" name="mobile_number" placeholder="Enter mobile number"  required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp_number">WhatsApp Number:</label>
+                    <input type="tel" class="form-control" id="whatsapp_number" name="whatsapp_number" placeholder="Enter WhatsApp number"  required>
+                </div>
+                <div class="form-group">
+                    <label for="marital_status">Marital Status:</label>
+                    <select class="form-control" id="marital_status" name="marital_status"  required>
+                        <option value="">Select</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Widowed">Widowed</option>
+                    </select>
+                </div>
+                <!-- Add other fields similarly -->
+            
+                <div class="form-group">
+                    <label for="signature">Signature of Applicant:</label>
+                    <input type="file" class="form-control-file" id="signature" name="signature" accept=".png, .jpg, .jpeg"  required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image:</label>
+                    <input type="file" class="form-control-file" id="image" name="image" accept=".png, .jpg, .jpeg"  required>
+                </div>
+                <div class="form-group">
+                    <label for="thumb_fingerprint">Thumb Fingerprint:</label>
+                    <input type="file" class="form-control-file" id="thumb_fingerprint" name="thumb_fingerprint" accept=".png, .jpg, .jpeg"  required>
+                </div>
+            
+                <button type="submit" class="btn btn-primary mt-5">Submit</button>
+            </form>
+             
+            
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (if needed) -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WydeP094WWqHjMHKpQ/6S5me9upZlTbGJ" crossorigin="anonymous"></script> -->
+<!-- 
+</body>
+</html> -->
+
+{%endblock body%}

@@ -1,0 +1,53 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+{%block body%}
+
+
+
+<!-- ***** Main Banner Area Start ***** -->
+
+<section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="{% static 'img/section-video.mp4'%}" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+            <h2><em>Gal</em>lery <span id="typed-output"></span></h2>
+            <!-- <h6><a href="/">Home</a> / Photos / Videos</h6> -->
+
+        </div>
+    </div>
+    
+</section>
+
+<!-- ***** Main Banner Area End ***** -->
+<div class="container  py-5">
+<div class="gallery">
+  <div class="row  justify-content-center">
+  {% for item in gallery_items %}
+      <div class="gallery-item">
+          {% if item.file %}
+              {% if item.file.name|slice:'-4:' == '.mp4' %}
+                  <video width="320" height="240" controls>
+                      <source src="{{ item.file.url }}" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              {% else %}
+                  <img class="img-fluid"src="{{ item.file.url }}" alt="{{ item.file.url }}" style="width: 320px; height: 300px;">
+              {% endif %}
+          {% elif item.video_link %}
+          <iframe width="320" height="300" src="{{ item.video_link }}" frameborder="0" allowfullscreen></iframe>
+          {% endif %}
+          
+      </div>
+  {% endfor %}
+</div>
+</div>
+
+</div>
+        <!-- End of gallery images -->
+
+    {%endblock body%}
